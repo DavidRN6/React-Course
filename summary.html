@@ -1,0 +1,152 @@
+<!-- الخطوات دى علشان ننزل رياكت -->
+npm create vite@latest
+cd ( project-name )
+npm install
+npm run dev
+
+<!-- لاعادة التشغيل -->
+cd ( project-name )
+npm run dev
+
+export                    import { fileName } from "module-name"         "./"   لو فى نفس الملف
+export defualt            import fileName from "module-name"
+
+
+app.jsx file    <!-- ده اللى بعمل فيه امبورت لكل الملفات التانية  -->
+
+
+{}    <!-- لكتابة كود جافاسكربت لازم يبقى جوا  -->
+
+"react"                      <!-- change from .jsx to .js -->
+"react-dom"                  <!-- render function -->
+"react-scripts"              <!-- some scripts to start application like 
+                             ( run - build - test - eject ) -->
+arrayName()                  <!-- بتلف على كل عنصر فى الارى و تنفذ الفانكشن -->
+<></>            AUX
+
+<!-- Card -->
+<div>
+import profilePic from "./assets/img/01.jpeg";
+function Card() {
+  return (
+    <div className="card">
+      <img src={profilePic} alt="Profile Picture" />
+      <h2>David Raoof</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
+        architecto.
+      </p>
+    </div>
+  );
+}
+export default Card;
+</div>
+
+<!-- Class Components -->
+<div>
+  <!-- component لازم يكون اول حرف فى اسم الملف كابتل -->
+
+  {javascript code}    => binding اسمه
+
+  class App extends Component {
+    state = {
+      name: 'David'
+    }
+    render() {
+      return (
+        <>
+          <h1>Welcome {this.state.name} in App Component</h1>        <!-- state عشان يشوف ال this لازم اكتب -->
+          <Parent age={this.state.age}/>
+        </>
+      )
+    }
+  }
+    <!-- component ل child تانية بشرط تكون component ل state اللى فى data اقدر ابعت ال -->
+    <Parent age={this.state.age}/>
+    <!-- بستقبلها هناك -->
+    console.log(this.props)
+    return<h2>i am {this.props.age} years old</h2>;
+
+    props :   بستقبل عليه الداتا object عبارة عن 
+</div>
+
+<!-- props -->
+<div>
+  <!-- علشان انقل الداتا this هنا مش لازم استخدم -->
+  function App() {
+    let name = "David";                                  
+    let age = 20;
+    return (
+      <>
+        <h1>Hello World!</h1>
+        <Child name = {name} age = {age}/>
+      </>
+    );
+  }
+
+  function Child(props) {
+    return <div>
+     <h3>I'm {props.name}</h3>;
+     <h3>I'm {props.age} years old</h3>;
+     </div>
+  }
+  
+
+
+</div>
+
+<!-- inline style -->
+style={{}} => style=""
+<div>
+<h1 style={{color: "red"}}>Hello World!</h1>           inline styles
+<!-- JSX اول كيرلى براكتز خاصة -->
+
+const pStyles = {color: "red", marginTop: "100px"};
+return (
+  <>
+    <h1 style={pStyles}>Hello World!</h1>
+  </>
+);
+<!-- و ممكن اعملو بالشكل ده -->
+</div>
+
+<!-- map -->
+<div>
+  const names = ["ahmed", "david", "demo"];
+  return (
+      <div>
+        {names.map((el, idx) => (
+          <div key={idx}>                   <!-- للديف key خاص بيه فانا هعمل الانديكس key هنا لازم احط لكل ديف -->
+            <p>{el}</p>
+          </div>
+        ))}
+      </div>
+  );
+</div>
+
+className=""  => class=""
+
+style={{ backgroundColor: type === "women" ? "pink" : "green" }}         <!-- اذن الخلفية يبقى لونها بينك غير كده يبقى لونها اخضر type = women معناها ان لو -->
+
+<!-- CSS Module -->
+<div>
+overwrite معين و مفيش اى ملف تانى يقدر يعمل عليه component مربوط CSS هى عبارة عن ان يكون ملف
+
+import styles from './Card.module.css'
+
+<div className={styles.container}></div>
+</div>
+
+<!-- useState -->
+<div>
+import { useState } from 'react';
+
+const App = () => {
+  const [count, setCount] = useState();
+
+  return(
+    <>
+    </>
+  );
+};
+</div>
